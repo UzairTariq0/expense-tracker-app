@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 1.24), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #eee5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,13 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+}
+
+.main-container{
+  background-color: #e2d7d7;
+  padding: 7px 18px;
+  border: 1px solid rgb(216, 215, 215);
+  box-shadow: 2px 1px 18px 1px black ;
 }
 
 .container {
@@ -27,21 +34,28 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
+  text-align: center;
 }
 
 h4 {
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .inc-exp-container {
-  background-color: #fff;
+  background-color: #e2d7d7;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
@@ -65,11 +79,13 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: #3dc576;
+  font-weight: 1000;
 }
 
 .money.minus {
-  color: #c0392b;
+  color: #bb1806;
+  font-weight: 1000;
 }
 
 label {
@@ -85,6 +101,7 @@ input[type='number'] {
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  background-color: #f7efef;
 }
 
 .btn {
@@ -112,7 +129,7 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: #e2d7d7;
   box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
@@ -120,6 +137,7 @@ input[type='number'] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+
 }
 
 .list li.plus {
